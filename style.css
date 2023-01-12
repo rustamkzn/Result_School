@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   box-sizing: border-box;
+   font-family: Roboto;
+   font-size: 16px;
+   font-weight: normal;
+   color: rgb(32, 32, 32);
+   background: rgb(213, 213, 213);
+   padding: 50px;
+}
+
+h2{
+   margin-bottom: 10px;
+}
+
+.card {
+   margin-top: 10px;
+}
+
+.container{
+   max-width: 900px;
+   margin: auto;
+}
+
+.card-text p{
+   color: rgb(0, 0, 0);
+}
+
+.img{
+   width: 400px;
+   
+   border-radius: 20px;
+   box-shadow: 2px 2px 8px rgba(15, 0, 90, 0.25);
+   margin-right: 20px;
+
+}
+.text, .link, .skill, .work, .school, .feedback, .info{
+   border-radius: 20px;
+   padding: 20px;
+   margin-bottom: 10px;
+   box-shadow: 2px 2px 8px rgba(15, 0, 90, 0.15);
+}
+
+.info{
+   display: flex;
+   height: auto;
+   background: rgb(234, 241, 252);
+}
+
+.text{
+   background: rgb(255, 255, 255);
+}
+
+.link{
+   background: rgb(255, 255, 255);
+}
+
+.skill{
+   background: rgb(220, 248, 245);
+   padding-left: 30px;
+}
+
+.work{
+    background: rgb(226, 234, 249);
+}
+
+.school{
+   background: rgb(250, 239, 224);
+   padding-left: 20px;
+}
+
+.school ul{
+   padding-left: 20px;
+}
+
+.resume h3{
+padding-left: 20px;
+}
+
+.resume ol {
+   padding-left: 20px;
+}
+
+.feedback{
+   background: rgb(196, 252, 214);
+}
+
+.btn{
+   color: coral;
+   text-decoration: none;
+}
+
+.btn:hover {
+   color: rgb(254, 0, 195);
+   text-decoration: underline;
+}
+
+button {
+   padding: 10px;
+}
+
+
+
+form h2{
+   text-align: center;
+}
+
+
+.form-group label{
+ display: block;
+}
+
+.form-group input, textarea {
+   width: 100%; 
+   box-sizing: border-box;
+   border: none;
+   background: transparent;
+   border-bottom: 1px solid rgb(43, 43, 43);
+   color: #000;
+   padding: 15px 0 10px;
+   outline: none;
+}
+
+.form-row{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.form-row .form-group {
+   margin-right: 20px;
+   width: 50%;
+}
+
+
+.feedback h2{
+   padding-bottom: 30px;
+}
+
+
+
+
+
+/* ---------------------адптивная верстка-----------------------  */
+
+@media(max-width: 1000px){
+   .info{
+      display: block;
+      text-align: center;
+   }
+
+      .img {
+         width: 360px;
+         text-align: center;
+         margin-right: 0;
+      }
+}
+
+
+@media(max-width: 540px) {
+   .info {
+      display: block;
+      text-align: center;
+   
+   }
+
+   .img{
+      width: 350px;
+      text-align: center;
+      margin-right: 0;
+   }
+}
+
+
+@media(max-width: 490px) {
+   .info {
+      display: block;
+      text-align: center;
+   }
+
+   .img {
+      width: 300px;
+      text-align: center;
+      margin-right: 0;
+   }
+
+   .form-row{
+      display: block;
+   }
+
+   .form-group{
+      padding-bottom: 20px;
+   }
+
+      .work h3 {
+         text-align: center;
+      }
+}
+
+
+
+@media(max-width: 440px) {
+   .info {
+      display: block;
+      text-align: center;
+
+   }
+
+   .img {
+      width: 250px;
+      text-align: center;
+      margin-right: 0;
+      
+   }
+
+   button{
+      text-align: center;
+   }
+
+   .work h3 {
+      text-align: center;
+   }
+
+}
+
+@media(max-width: 375px) {
+   .info {
+      display: block;
+      text-align: center;
+
+   }
+
+   .img {
+      width: 230px;
+      text-align: center;
+      margin-right: 0;
+   }
+
+   h1{
+      font-size: 24px;
+   }
+
+   .work h3{
+      text-align: center;
+   }
+}
+
+
